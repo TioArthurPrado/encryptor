@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decoder</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <section class="main-section">
+        <input
+          autocomplete="off"
+          id="input-text"
+          class="main-section-input"
+          type="text"
+          onkeypress="apenasMinusculas(event)"
+          placeholder="Digite seu texto aqui"
+        />
+        <p>
+          <img
+            src="./assets/exclamacao.png"
+            alt="ponto de exclamação informando algo relevante"
+          />
+          Apenas letras minúsculas e sem acento.
+        </p>
+        <div class="divisor-espacos-main-div">
+          <button
+            class="divisor-espacos-main-button-criptografar"
+            onclick="criptografar()"
+          >
+            Criptografar
+          </button>
+          <button
+            class="divisor-espacos-main-button-descriptografar"
+            onclick="descriptografar()"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <div class="div-encrypted-text">
+        <aside id="texto-criptografado" class="aside-main">
+          <img
+            class="aside-image-lupa"
+            src="./assets/lupa.png"
+            alt="Imagem de uma lupa"
+          />
+          <h2 class="aside-main-h2">Nenhuma Mensagem encontrada</h2>
+          <p class="aside-main-texto">
+            Digite um texto que você deseja criptografar ou descriptografar
+          </p>
+        </aside>
+        <button id="copy-btn" class="copyButton" onclick="copyEncriptedText()">
+          Copy
+        </button>
+      </div>
+      <div class="div-copied-text">
+        <div class="copied-text">
+          <div class="copied-text-div">
+            <img
+              class="copied-text-div-image"
+              src="./assets/copied.png"
+              alt=""
+            />
+          </div>
+          <p>Texto copiado</p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
