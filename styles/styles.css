@@ -232,6 +232,8 @@ footer {
     width: 375px;
   }
   .main-section {
+    display: flex;
+    justify-content: center;
     width: 375px;
   }
   .copyButton {
@@ -259,5 +261,24 @@ footer {
     gap: 1vw;
     align-items: start;
     font-size: 0.8rem;
+  }
+  .copyButton {
+    padding: 24px 40px;
+  }
+
+  .copied-text {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .copied-text-div {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .copied-text-div-image {
+    height: 2.5vh;
+    width: 2.5vh;
   }
 }
