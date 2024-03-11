@@ -254,7 +254,7 @@ footer {
   }
   .divisor-espacos-main-div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .text-just-carachter {
     display: flex;
