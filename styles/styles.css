@@ -89,7 +89,7 @@ main {
   gap: 2.5vh;
 }
 
-.aside-main-texto {
+.aside-main-text {
   margin: 0 18%;
   text-align: center;
 }
@@ -160,18 +160,104 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 2.5vh;
+    row-gap: 2.5vh;
+    width: 760px;
   }
-  .aside-image-lupa{
+  .aside-image-lupa {
     display: none;
   }
-  .aside-main{
-    display: flex;
-    width: 80vw;
-    min-height: 10vh;
-  }
-  .div-encrypted-text{
+  .aside-main {
     display: flex;
     align-items: center;
+    width: 700px;
+    align-items: center;
+    min-height: 13vh;
+  }
+  .div-encrypted-text {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    width: 760px;
+  }
+  .main-section {
+    width: 760px;
+  }
+  .copyButton {
+    width: 700px;
+  }
+  .main-section-input {
+    height: 35vh;
+  }
+  .copyButton {
+    padding: 24px 40px;
+  }
+
+  .copied-text {
+    width: 70vw;
+  }
+
+  .copied-text-div {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .copied-text-div-image {
+    height: 2.5vh;
+    width: 2.5vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5vh;
+    width: 375px;
+  }
+  .aside-image-lupa {
+    display: none;
+  }
+  .aside-main {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    align-items: center;
+    min-height: 13vh;
+  }
+  .div-encrypted-text {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    width: 375px;
+  }
+  .main-section {
+    width: 375px;
+  }
+  .copyButton {
+    width: 80vw;
+  }
+  .main-section-input {
+    height: 35vh;
+  }
+  .divisor-espacos-main-button-descriptografar {
+    width: 85vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .divisor-espacos-main-button-criptografar {
+    width: 85vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .divisor-espacos-main-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-just-carachter {
+    display: flex;
+    gap: 1vw;
+    align-items: start;
+    font-size: 0.8rem;
   }
 }
